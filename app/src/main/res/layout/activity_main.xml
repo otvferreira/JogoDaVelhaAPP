@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#003DA5">
+
+    <!-- Status do Jogo -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jogador X começa"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Grade do Jogo da Velha -->
+    <GridLayout
+        android:id="@+id/gameGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Células do jogo (Botões) -->
+        <Button android:id="@+id/button0" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button1" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button2" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button3" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button4" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button5" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button6" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button7" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/button8" style="@style/TicTacToeButton"/>
+
+    </GridLayout>
+
+    <!-- Botão Reiniciar -->
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Jogo"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#003DA5" />
+</LinearLayout>
